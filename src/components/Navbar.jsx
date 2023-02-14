@@ -43,14 +43,14 @@ const Navbar = ({ toggleNav, navOpen }) => {
     <div className={styles.container}>
       {navOpen ? <button onClick={toggleNav} className={styles.X}><AiOutlineClose size={32} onClick={toggleNav} val /></button> : <div className={styles.contractedX}></div>}
        <div className={navOpen ? styles.titleOpen : styles.title}>Gallery</div>
-      <div className={navOpen ? styles.menuOpen : styles.menu} onClick={toggleNav} >
+      <button className={navOpen ? styles.menuOpen : styles.menu} onClick={toggleNav} >
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>
         {navOpen ? <div className={styles.menucontent} style={{ opacity: opacity }}>
           <div className={styles.smallTitle}>A 4K Image Gallery powered by Pexels API</div>
           <div className={styles.smallParagraph}>This web portfolio project showcases a 4K image gallery utilizing the Pexels API. The gallery is filled with high-resolution images of various scenic landscapes, breathtaking cityscapes, and amazing wildlife, sourced from one of the world's largest photo libraries, Pexels.</div>
         </div> : <div className={styles.none}></div>}
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>
-      </div>
+      </button>
       <div className={styles.nav}>
         <div className={styles.navItem}><TbApi title='Pexels API' size={32} onClick={() => window.open('https://www.pexels.com/api/','_blank')} /></div>
         <div className={styles.navItem}><AiOutlineGithub title='Source Code' onClick={() => window.open('https://github.com/MadeInUtrecht/react-gallery', '_blank')} size={32} /></div>
