@@ -15,7 +15,7 @@ const styles = {
   navItem: `cursor-pointer text-[#000] py-3`,
   expandedNav: `transition-all duration-500`,
   contractedNav: `transition-all duration-500`,
-  X: `w-full flex justify-start items-center z-[-1] absolute pl-11  cursor-pointer`,
+  X: `left-5 top-5 absolute   cursor-pointer`,
   contractedX: `w-full flex justify-start items-center z-[-1] absolute display-none `,
   xx: `cursor-pointer`,
   menucontent: `w-screen max-h-40 md:max-h-96 flex flex-col justify-center items-center -rotate-90 transition-all duration-500 p-11 opacity-0 md:opacity-100 `,
@@ -41,7 +41,7 @@ const Navbar = ({ toggleNav, navOpen }) => {
   return (
 
     <div className={styles.container}>
-      {navOpen ? <button onclick={toggleNav}className={styles.X}><AiOutlineClose size={32} onclick={toggleNav} /></button> : <div className={styles.contractedX}></div>}
+      {navOpen ? <button onClick={toggleNav} className={styles.X}><AiOutlineClose size={32} onClick={toggleNav} val /></button> : <div className={styles.contractedX}></div>}
        <div className={navOpen ? styles.titleOpen : styles.title}>Gallery</div>
       <div className={navOpen ? styles.menuOpen : styles.menu} onClick={toggleNav} >
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>
@@ -52,9 +52,9 @@ const Navbar = ({ toggleNav, navOpen }) => {
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>
       </div>
       <div className={styles.nav}>
-        <div className={styles.navItem}><TbApi size={32}/></div>
-        <div className={styles.navItem}><AiOutlineGithub size={32} /></div>
-        <div className={styles.navItem}><IoMdContact size={32}/></div>
+        <div className={styles.navItem}><TbApi size={32} onClick={() => window.open('https://www.pexels.com/api/','_blank')} /></div>
+        <div className={styles.navItem}><AiOutlineGithub onClick={() => window.open('https://vadimboot4kgallery.netlify.app/', '_blank')} size={32} /></div>
+        <div className={styles.navItem}><IoMdContact onClick={() => window.open('https://vadimboot.com', '_blank')} size={32}/></div>
       </div>
     </div>
   );
