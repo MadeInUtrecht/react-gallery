@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineGithub } from 'react-icons/ai';
+import {TbApi} from 'react-icons/tb'
+import { IoMdContact } from 'react-icons/io';
 
 const styles = {
-  container: `w-full h-screen flex flex-col justify-between items-center p-11 transition-all duration-500`,
+  container: `w-full h-screen flex flex-col justify-between items-center p-3 transition-all duration-500`,
   title: `w-full flex justify-center items-end rotate-90 font-[Italiana] text-[40px] pl-20 transition-all duration-500`,
   titleOpen: `w-full flex justify-center items-center rotate-270 font-[Italiana] text-[40px]  transition-all duration-500`,
   menu: `flex justify-between flex-col h-[20px] cursor-pointer transition-all duration-500 my-auto `,
   menuOpen: `flex items-center justify-between flex-col h-[20px] cursor-pointer rotate-90 transition-all duration-500 h-[60%] w-[30%] sm:h-[50%] md:h-[80%]`,
   menuItem: `w-[50px] h-[4px] bg-[#000] rounded-full cursor-pointer transition-all duration-500`,
   menuItemOpen: `w-[200px] h-[4px] bg-[#000] rounded-full cursor-pointer transition-all duration-500 `,
-  nav: `w-full flex flex-col justify-start items-center`,
-  navItem: `cursor-pointer text-[#000] underline`,
+  nav: `w-full flex flex-col justify-center items-center`,
+  navItem: `cursor-pointer text-[#000] py-3`,
   expandedNav: `transition-all duration-500`,
   contractedNav: `transition-all duration-500`,
   X: `w-full flex justify-start items-center z-[-1] absolute pl-11  cursor-pointer`,
@@ -50,9 +52,9 @@ const Navbar = ({ toggleNav, navOpen }) => {
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>
       </div>
       <div className={styles.nav}>
-        <div className={styles.navItem}>Pexels</div>
-        <div className={styles.navItem}>Source</div>
-        <div className={styles.navItem}>Portfolio</div>
+        <div className={styles.navItem}><TbApi size={32}/></div>
+        <div className={styles.navItem}><AiOutlineGithub size={32} /></div>
+        <div className={styles.navItem}><IoMdContact size={32}/></div>
       </div>
     </div>
   );
