@@ -22,7 +22,7 @@ const styles = {
   none: `hidden opacity-0`,
   smallContainer: ``,
   smallTitle: `font-bold text-lg md:text-xl text-center text-[12px]`,
-  smallParagraph: `w-3/5 md:w-1/3 pt-3 text-center text-sm md:text-base text-[10px]`
+  smallParagraph: `w-4/5 md:w-1/3 pt-3 text-center text-sm md:text-base text-[10px]`
 };
 
 const Navbar = ({ toggleNav, navOpen }) => {
