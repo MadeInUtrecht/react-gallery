@@ -52,9 +52,9 @@ const Navbar = ({ toggleNav, navOpen }) => {
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>
       </div>
       <div className={styles.nav}>
-        <div className={styles.navItem}><TbApi size={32} onClick={() => window.open('https://www.pexels.com/api/','_blank')} /></div>
-        <div className={styles.navItem}><AiOutlineGithub onClick={() => window.open('https://vadimboot4kgallery.netlify.app/', '_blank')} size={32} /></div>
-        <div className={styles.navItem}><IoMdContact onClick={() => window.open('https://vadimboot.com', '_blank')} size={32}/></div>
+        <div className={styles.navItem}><TbApi title='Pexels API' size={32} onClick={() => window.open('https://www.pexels.com/api/','_blank')} /></div>
+        <div className={styles.navItem}><AiOutlineGithub title='Source Code' onClick={() => window.open('https://github.com/MadeInUtrecht/react-gallery', '_blank')} size={32} /></div>
+        <div className={styles.navItem}><IoMdContact title='Personal Portfolio' onClick={() => window.open('https://vadimboot.com', '_blank')} size={32}/></div>
       </div>
     </div>
   );
