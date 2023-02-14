@@ -6,7 +6,7 @@ const styles = {
   title: `w-full flex justify-center items-end rotate-90 font-[Italiana] text-[40px] pl-20 transition-all duration-500`,
   titleOpen: `w-full flex justify-center items-center rotate-270 font-[Italiana] text-[40px]  transition-all duration-500`,
   menu: `flex justify-between flex-col h-[20px] cursor-pointer transition-all duration-500 my-auto `,
-  menuOpen: `flex items-center justify-between flex-col h-[20px] cursor-pointer rotate-90 transition-all duration-500 h-[35%] w-[30%] sm:h-[50%] md:h-[80%]`,
+  menuOpen: `flex items-center justify-between flex-col h-[20px] cursor-pointer rotate-90 transition-all duration-500 h-[45%] w-[30%] sm:h-[50%] md:h-[80%]`,
   menuItem: `w-[50px] h-[4px] bg-[#000] rounded-full cursor-pointer transition-all duration-500`,
   menuItemOpen: `w-[200px] h-[4px] bg-[#000] rounded-full cursor-pointer transition-all duration-500 `,
   nav: `w-full flex flex-col justify-start items-center`,
@@ -39,7 +39,7 @@ const Navbar = ({ toggleNav, navOpen }) => {
   return (
 
     <div className={styles.container}>
-      {navOpen ? <div className={styles.X}><AiOutlineClose size={32} /></div> : <div className={styles.contractedX}></div>}
+      {navOpen ? <button onclick={toggleNav}className={styles.X}><AiOutlineClose size={32} onclick={toggleNav} /></button> : <div className={styles.contractedX}></div>}
        <div className={navOpen ? styles.titleOpen : styles.title}>Gallery</div>
       <div className={navOpen ? styles.menuOpen : styles.menu} onClick={toggleNav} >
         <div className={navOpen ? styles.menuItemOpen : styles.menuItem}></div>

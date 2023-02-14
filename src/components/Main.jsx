@@ -22,7 +22,7 @@ const Main = () => {
       <div className={navOpen ? styles.closedContainer : styles.container}>
         <Container />
       </div>
-      <div className={navOpen ? styles.openNavdiv : styles.navdiv} onClick={toggleNav}>
+      <div className={navOpen ? styles.openNavdiv : styles.navdiv} >
         <Navbar toggleNav={toggleNav} navOpen={navOpen} />
       </div>
     </div>
