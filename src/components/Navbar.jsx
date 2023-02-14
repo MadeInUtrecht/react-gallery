@@ -5,7 +5,7 @@ import { IoMdContact } from 'react-icons/io';
 
 const styles = {
   container: `w-full h-screen flex flex-col justify-between items-center p-3 transition-all duration-500`,
-  title: `w-full flex justify-center items-end rotate-90 font-[Italiana] text-[40px] pl-20 transition-all duration-500`,
+  title: `w-full flex justify-center items-end rotate-90 font-[Italiana]  text-[40px] md:text-[40px]  transition-all duration-500 py-3`,
   titleOpen: `w-full flex justify-center items-center rotate-270 font-[Italiana] text-[40px]  transition-all duration-500`,
   menu: `flex justify-between flex-col h-[20px] cursor-pointer transition-all duration-500 my-auto `,
   menuOpen: `flex items-center justify-between flex-col h-[20px] cursor-pointer rotate-90 transition-all duration-500 h-[60%] w-[30%] sm:h-[50%] md:h-[80%]`,
