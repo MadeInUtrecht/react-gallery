@@ -41,7 +41,7 @@ const Container = () => {
     else if (window.innerWidth < 1280) {
       setResults(42);
     }
-    else if (window.innerWidth > 1536) {
+    else if (window.innerWidth < 1536) {
       setResults(44);
     }
   }, []);
