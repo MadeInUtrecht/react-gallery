@@ -8,7 +8,7 @@ const styles = {
   img: `rounded-lg shadow-lg display-flex justify-content-center align-items-center cursor-pointer hover: hover:scale-105 transition-all duration-500`,
   popup: `w-[50%] bg-black bg-opacity-75 z-40 display-flex justify-content-center align-items-center rounded-lg fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2`,
   bg: `bg-black bg-opacity-75 z-50 fixed top-0 left-0 w-full h-full`,
-  overlay: `absolute top-1/2 left-1/2 p-6 bg-white bg-opacity-50 z-50 flex justify-center items-center rounded-full transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:bg-opacity-75 transition-all duration-250`,
+  overlay: `absolute top-1/2 left-1/2 p-[3%] bg-white bg-opacity-50 z-50 flex justify-center items-center rounded-full transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:bg-opacity-75 transition-all duration-250`,
   close: `absolute top-5 left-5 w-10 h-10 flex justify-center items-center cursor-pointer text-white`,
 
 };
