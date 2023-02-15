@@ -68,7 +68,7 @@ const Container = () => {
           <div className={styles.close} onClick={() => setClickedImage(null)}>
             <AiOutlineClose size={32} />
           </div>
-          <img src={clickedImage.src.large} alt={clickedImage.alt_description} className={styles.popup}/>
+          <img src={clickedImage.src.original} alt={clickedImage.alt_description} className={styles.popup}/>
           <div
             download={`${clickedImage.id}.jpg`}
             className={styles.overlay}
